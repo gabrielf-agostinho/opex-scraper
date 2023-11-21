@@ -1,0 +1,19 @@
+{
+  "name": "opex-scraper-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Gabriel Felipe de Agostinho",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "cheerio": "^1.0.0-rc.12",
+    "request-promise": "^4.2.6",
+    "rxjs": "~7.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.3",
+    "typescript": "~5.1.3"
+  }
+}
