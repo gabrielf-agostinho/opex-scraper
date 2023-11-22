@@ -1,5 +1,5 @@
 import { from, firstValueFrom } from 'rxjs';
-import * as rp from "request-promise";
+import rp from "request-promise";
 import * as cheerio from "cheerio";
 
 export class BaseService {
