@@ -2,7 +2,7 @@
   <div class="col-12 pb-5">
     <ng-container *ngFor="let volume of volumes">
       <div class="mb-4">
-        <p-panel [toggleable]="true" [collapsed]="true">
+        <p-panel>
           <ng-template pTemplate="header">
             <h4>
               <i class="pi pi-book me-3"></i>
@@ -12,7 +12,7 @@
           <p-table [value]="volume.capitulos">
             <ng-template pTemplate="header">
               <tr>
-                <th>Nome do capítulo</th>
+                <th class="w-75">Nome do capítulo</th>
                 <th class="text-center">Ações</th>
               </tr>
             </ng-template>
@@ -20,8 +20,8 @@
               <tr>
                 <td>{{ capitulo.titulo }}</td>
                 <td class="d-flex justify-content-around align-items-center">
-                  <p-button icon="pi pi-eye" styleClass="p-button-rounded p-button-outlined"></p-button>
-                  <p-button icon="pi pi-eye" styleClass="p-button-rounded"></p-button>
+                  <p-button icon="pi pi-eye" [rounded]="true" severity="secondary"></p-button>
+                  <p-button icon="pi pi-eye" [rounded]="true"></p-button>
                 </td>
               </tr>
             </ng-template>
