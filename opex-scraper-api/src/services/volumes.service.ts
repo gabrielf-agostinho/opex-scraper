@@ -22,7 +22,9 @@ export class VolumesService extends BaseService {
 
       chapters.each((index, element) => {
         capitulosList.push({
-          titulo: $('span', $(element).html()).text()
+          titulo: $('span', $(element).html()).text(),
+          link: $('a', $(element).html()).attr('href'),
+          linkColorido: $('.online.online-colorido', $(element).html()).attr('href')
         });
       });
 

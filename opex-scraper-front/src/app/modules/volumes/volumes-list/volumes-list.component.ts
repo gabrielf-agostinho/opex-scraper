@@ -23,4 +23,8 @@ export class VolumesListComponent implements OnInit {
       error: (err) => console.error(err)
     });
   }
+
+  public ler(link: string): void {
+    console.log(link);
+  }
 }

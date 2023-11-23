@@ -20,8 +20,12 @@
               <tr>
                 <td>{{ capitulo.titulo }}</td>
                 <td class="d-flex justify-content-around align-items-center">
-                  <p-button icon="pi pi-eye" [rounded]="true" severity="secondary"></p-button>
-                  <p-button icon="pi pi-eye" [rounded]="true"></p-button>
+                  <ng-container *ngIf="capitulo.link">
+                    <p-button icon="pi pi-eye" pTooltip="Ler capítulo" tooltipPosition="left" [rounded]="true" severity="secondary" (onClick)="ler(capitulo.link)"></p-button>
+                  </ng-container>
+                  <ng-container *ngIf="capitulo.linkColorido">
+                    <p-button icon="pi pi-eye" pTooltip="Ler capítulo (colorido)" tooltipPosition="left" [rounded]="true" (onClick)="ler(capitulo.linkColorido)"></p-button>
+                  </ng-container>
                 </td>
               </tr>
             </ng-template>
